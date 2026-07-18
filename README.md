@@ -1,23 +1,3 @@
-# 项目文档
-<div style="display: flex; gap: 10px;">
-  <img src="http://zhiguangapp.oss-cn-beijing.aliyuncs.com/posts/262804640385601536/images/20251226/11a8438f.png" width="250" />
-  <img src="http://zhiguangapp.oss-cn-beijing.aliyuncs.com/posts/262804640385601536/images/20251226/4035ca79.png" width="250" />
-  <img src="http://zhiguangapp.oss-cn-beijing.aliyuncs.com/posts/262804640385601536/images/20251226/40b80f25.png" width="250" />
-</div>
-
-![文档1](http://zhiguangapp.oss-cn-beijing.aliyuncs.com/posts/262804640385601536/images/20251226/43eb8fe1.png)
-![文档2](http://zhiguangapp.oss-cn-beijing.aliyuncs.com/posts/262804640385601536/images/20251226/42b24575.png)
-
-# 项目前端页面展示
-<div style="display: flex; gap: 10px;">
-  <img src="https://free.picui.cn/free/2026/03/29/69c8db2c32d74.png" width="800" />
-  <img src="https://free.picui.cn/free/2026/03/29/69c8db2ead009.png" width="800" />
-  <img src="https://free.picui.cn/free/2026/03/29/69c8db2b93e32.png" width="800" />
-  <img src="https://free.picui.cn/free/2026/03/29/69c8db2b89818.png" width="800" />
-  <img src="https://free.picui.cn/free/2026/03/29/69c8db2bd181e.png" width="800" />
-  <img src="https://free.picui.cn/free/2026/03/29/69c8db2c30a4b.png" width="800" />
-</div>
-
 # 知光平台-知识获取与分享社区
 后端 & 前端开发（前端采用 AI 辅助开发）
 - **后端地址**：https://github.com/G-Pegasus/zhiguang_be
@@ -33,3 +13,13 @@
     - **Feed 流**：采用三级缓存架构且设计了缓存一致性策略，本地 Caffeine + Redis 页面缓存 + Redis 片段缓存。自定义 hotkey 探测机制自定义 hotkey 探测，基于热点检测按层级延长缓存时长，叠加随机抖动抗雪崩。并设置单飞锁(single-flight)避免同一页并发回源风暴。Feed 三级缓存设计
     - **搜索系统**：基于 Elasticsearch 构建内容搜索与联想建议功能，支持关键词检索，标签过滤，采用 search_after 游标分页保证深分页稳定性。同时通过 function_score 融合 BM25 相关性与点赞等业务权重优化排序，保证结果的相关性；并使用 ES 的 completion suggester 实现低延迟前缀联想。
     - **AI 问答系统**：开发知光平台 RAG 知识问答系统，实现用户调用接口→索引检查→向量检索→Prompt 构造→大模型流式生成的全流程，通过合理分块、幂等删除保持单一版本、预索引减少首次提问等待时间等，显著提升用户围绕单篇知文的智能问答效率与准确性。
+
+# 项目前端页面展示
+<div style="display: flex; gap: 10px;">
+  <img src="https://free.picui.cn/free/2026/03/29/69c8db2c32d74.png" width="800" />
+  <img src="https://free.picui.cn/free/2026/03/29/69c8db2ead009.png" width="800" />
+  <img src="https://free.picui.cn/free/2026/03/29/69c8db2b93e32.png" width="800" />
+  <img src="https://free.picui.cn/free/2026/03/29/69c8db2b89818.png" width="800" />
+  <img src="https://free.picui.cn/free/2026/03/29/69c8db2bd181e.png" width="800" />
+  <img src="https://free.picui.cn/free/2026/03/29/69c8db2c30a4b.png" width="800" />
+</div>
